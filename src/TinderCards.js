@@ -34,7 +34,7 @@ function TinderCards() {
                 <TinderCard
                     className="swipe"
                     key={person.name}
-                    preventSwipe={['up', 'down']}
+                    preventSwipe={['up']}
                 >
                     <div
                         style={{ backgroundImage: `url(${person.url})` }}
