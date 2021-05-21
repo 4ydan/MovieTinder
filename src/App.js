@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import TinderCards from './TinderCards';
-import MovieDB from './MovieDB';
+import Trending from './Trending';
+import Discover from './Discover';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 
@@ -9,15 +9,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Switch>
-          <Route path="/pipi">
-            <h1>PUPU</h1>
-            <MovieDB />
+          <Route path="/trending">
+            <h1 className="text">Trending</h1>
+            <Trending />
           </Route>
           <Route path="/">
-            <TinderCards />
+            <h1 className="text">Discover</h1>
+            <Discover />
           </Route>
         </Switch>
       </Router>
