@@ -8,10 +8,11 @@ const Header = () => {
     return (
         <div className="header">
             <IconButton>
-                <PersonIcon className="header_icon"  fontSize="large" />
+                
             </IconButton>
+            <h1>Movies of the day</h1>
             <IconButton>
-                <QuestionAnswerIcon className="header_icon" fontSize="large" />
+              
             </IconButton>
         </div>
     )
