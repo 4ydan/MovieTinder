@@ -11,12 +11,12 @@ const Header = () => {
         <div className="header">
             <Link to="/">
             <IconButton>
-                <EmojiObjectsIcon className="header_icon"  fontSize="middle" />
+                <EmojiObjectsIcon className="header_icon"  fontSize="default" />
             </IconButton>
             </Link>
             <Link to="trending">
             <IconButton>
-                <WhatshotIcon className="header_icon"  fontSize="middle" />
+                <WhatshotIcon className="header_icon"  fontSize="default" />
             </IconButton>
             </Link>
         </div>

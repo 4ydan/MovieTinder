@@ -1,4 +1,5 @@
 .card {
+    margin-top: 20;
     position: relative;
     width: 600px;
     padding: 20px;
@@ -7,14 +8,23 @@
     border-radius: 20px;
     background-size: 105%, 105%;
     background-repeat: no-repeat;
-    background-position: center;
     box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, .3);
+}
+
+.MovieTitle {
+    margin-top: 1000;
 }
 
 .card > h3 {
     position: absolute;
     bottom: 10;
-    color: black;
+    color: white;
+}
+
+.card > h4 {
+    position: absolute;
+    bottom: 0;
+    color: white;
 }
 
 .tinderCardsContainer {

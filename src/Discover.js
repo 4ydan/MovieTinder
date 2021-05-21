@@ -20,35 +20,38 @@ export default function Discover() {
         }
         if (count === 20){
             count = 0
-            setPeople([])
+            setMovie([])
             setPage(page + 1)
         }
       }
-    const[people, setPeople] = useState([]);
+    const[response, setMovie] = useState([]);
     useEffect(() => {
         async function fetchUrl() {
             const response = await fetch(url_begin + movieID + url_end + page);
             const json = await response.json();
-            setPeople(json);
+            setMovie(json);
       }
         fetchUrl();
         // eslint-disable-next-line
       }, [page]);
-    if (people.results && people.results.length > 0) {
+      console.log(response)
+    if (response.results && response.results.length > 0) {
         return (
             <div className="tinderCardsContainer">
-                {people.results.map(person => (
+                {response.results.map(movie => (
                 <TinderCard
                     className="swipe"
-                    key={person.id}
+                    key={movie.id}
                     flickOnSwipe="false"
                     preventSwipe={['up']}
-                    onSwipe={(dir) => onSwipe(dir, person.id)}
+                    onSwipe={(dir) => onSwipe(dir, movie.id)}
                 >
                     <div
-                        style={{ backgroundImage: `url(${'https://image.tmdb.org/t/p/w780' + person.poster_path})` }}
+                        style={{ backgroundImage: `url(${'https://image.tmdb.org/t/p/w780' + movie.poster_path})` }}
                         className="card"
                     >
+                        <h3>{ movie.title }</h3>
+                        <h4>{ movie.vote_average }</h4>
                     </div>
                 </TinderCard>
             ))}
