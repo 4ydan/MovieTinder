@@ -3,6 +3,7 @@ import "./TinderCards.css";
 import TinderCard from "react-tinder-card";
 
 function TinderCards() {
+    // eslint-disable-next-line
     const[people, _] = useState([
         {
             name: 'Frozen',
