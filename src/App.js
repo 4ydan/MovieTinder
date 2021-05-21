@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './Header';
 import TinderCards from './TinderCards';
+import MovieDB from './MovieDB';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
 import './App.css';
+
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <Switch>
           <Route path="/pipi">
-            <h1> Ipsum lorem</h1>
+            <h1>PUPU</h1>
+            <MovieDB />
           </Route>
           <Route path="/">
             <TinderCards />
