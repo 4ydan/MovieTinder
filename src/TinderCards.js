@@ -3,7 +3,7 @@ import "./TinderCards.css";
 import TinderCard from "react-tinder-card";
 
 function TinderCards() {
-    const[people, setPeople] = useState([
+    const[people, _] = useState([
         {
             name: 'Frozen',
             url: 'https://lumiere-a.akamaihd.net/v1/images/p_frozen_18373_3131259c.jpeg?region=0%2C0%2C540%2C810'

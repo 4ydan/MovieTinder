@@ -10,7 +10,6 @@ const Header = () => {
             <IconButton>
                 <PersonIcon className="header_icon"  fontSize="large" />
             </IconButton>
-            <h2></h2>
             <IconButton>
                 <QuestionAnswerIcon className="header_icon" fontSize="large" />
             </IconButton>
